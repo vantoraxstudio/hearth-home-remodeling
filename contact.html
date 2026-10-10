@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Request a Remodeling Quote | Hearth &amp; Home Remodeling</title>
+  <meta name="description" content="Request a free kitchen or bathroom remodeling quote from Hearth &amp; Home Remodeling. This is a demonstration form for a fictional company.">
+  <meta name="theme-color" content="#173D2B">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Request a Remodeling Quote | Hearth &amp; Home Remodeling">
+  <meta property="og:description" content="Request a free kitchen or bathroom remodeling quote from Hearth &amp; Home Remodeling. This is a demonstration form for a fictional company.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23173D2B'/%3E%3Cpath d='M6 16 16 7l10 9' fill='none' stroke='%23F8F6F0' stroke-width='2.2' stroke-linejoin='round' stroke-linecap='round'/%3E%3Cpath d='M9.5 15v10h13V15' fill='none' stroke='%23F8F6F0' stroke-width='2.2' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="demo-bar" role="note"><strong>Portfolio demonstration:</strong> Hearth &amp; Home Remodeling is a fictional business. Website demo by Vantorax Studio.</div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Hearth &amp; Home Remodeling, home page">
+        <svg class="brand-mark" viewBox="0 0 38 38" aria-hidden="true" focusable="false"><rect width="38" height="38" rx="6" fill="currentColor"/><path d="M7 19 19 8l12 11" fill="none" stroke="#F8F6F0" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 18v13h16V18" fill="none" stroke="#F8F6F0" stroke-width="2.4" stroke-linejoin="round"/><path d="M16 31v-7a3 3 0 0 1 6 0v7" fill="none" stroke="#A9B8A2" stroke-width="2.2" stroke-linejoin="round"/></svg>
+        <span class="brand-text">Hearth &amp; Home<small>Remodeling</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="nav-toggle-label">Menu</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+          <li><a class="btn" href="contact.html">Get a Free Quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h1 id="page-title">Request a free quote</h1>
+        <p class="lead">Tell us about your kitchen or bathroom project. We&rsquo;d love to hear what you have in mind.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="form-title">
+      <div class="container contact-layout">
+        <div class="form-card">
+          <h2 id="form-title">Tell us about your project</h2>
+          <div class="notice demo-mode-note" role="note">
+            <p><strong>Demo mode.</strong> This form is for demonstration only and is not connected to a real business inbox. Nothing you enter is sent anywhere.</p>
+          </div>
+
+          <div id="form-status" class="form-status" hidden></div>
+
+          <form id="quote-form" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Full Name<span class="req" aria-hidden="true">*</span><span class="visually-hidden"> (required)</span></label>
+                <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-error">
+                <p class="field-error" id="name-error"></p>
+              </div>
+
+              <div class="field">
+                <label for="email">Email Address<span class="req" aria-hidden="true">*</span><span class="visually-hidden"> (required)</span></label>
+                <input type="email" id="email" name="email" autocomplete="email" inputmode="email" required aria-describedby="email-error">
+                <p class="field-error" id="email-error"></p>
+              </div>
+
+              <div class="field">
+                <label for="phone">Phone Number <span class="opt">(optional)</span></label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" aria-describedby="phone-error">
+                <p class="field-error" id="phone-error"></p>
+              </div>
+
+              <div class="field">
+                <label for="project_type">Project Type<span class="req" aria-hidden="true">*</span><span class="visually-hidden"> (required)</span></label>
+                <select id="project_type" name="project_type" required aria-describedby="project_type-error">
+                  <option value="">Select a project type</option>
+                  <option>Kitchen Remodeling</option>
+                  <option>Bathroom Remodeling</option>
+                  <option>Kitchen &amp; Bathroom</option>
+                  <option>Design &amp; Planning</option>
+                  <option>Whole-Home Updates</option>
+                  <option>Not sure yet</option>
+                </select>
+                <p class="field-error" id="project_type-error"></p>
+              </div>
+
+              <div class="field">
+                <label for="budget">Estimated Budget <span class="opt">(optional)</span></label>
+                <select id="budget" name="budget" aria-describedby="budget-hint">
+                  <option value="">Prefer not to say</option>
+                  <option>Under $15,000</option>
+                  <option>$15,000 &ndash; $30,000</option>
+                  <option>$30,000 &ndash; $60,000</option>
+                  <option>$60,000 &ndash; $100,000</option>
+                  <option>$100,000+</option>
+                  <option>Not sure yet</option>
+                </select>
+                <p class="hint" id="budget-hint">Illustrative ranges only.</p>
+              </div>
+
+              <div class="field">
+                <label for="location">Project Location<span class="req" aria-hidden="true">*</span><span class="visually-hidden"> (required)</span></label>
+                <input type="text" id="location" name="location" autocomplete="address-level2" required aria-describedby="location-hint location-error">
+                <p class="hint" id="location-hint">City and state, or general area.</p>
+                <p class="field-error" id="location-error"></p>
+              </div>
+
+              <div class="field field--full">
+                <label for="details">Project Details<span class="req" aria-hidden="true">*</span><span class="visually-hidden"> (required)</span></label>
+                <textarea id="details" name="details" rows="6" required aria-describedby="details-error"></textarea>
+                <p class="field-error" id="details-error"></p>
+              </div>
+
+              <div class="field field--full field--check">
+                <input type="checkbox" id="consent" name="consent" value="yes" required aria-describedby="consent-error">
+                <label for="consent">I agree to be contacted about my inquiry.<span class="req" aria-hidden="true">*</span><span class="visually-hidden"> (required)</span></label>
+                <p class="field-error" id="consent-error"></p>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn" type="submit">Request a Free Quote</button>
+              <p class="hint"><span class="req" aria-hidden="true">*</span> Required field</p>
+            </div>
+          </form>
+          <noscript><p class="notice" style="margin-top:1.25rem">JavaScript is needed for this demonstration form. You can still reach us at the demo email address shown on this page.</p></noscript>
+        </div>
+
+        <aside aria-label="Demonstration contact details">
+          <div class="info-card">
+            <span class="demo-tag">Demo contact information</span>
+            <h2>Let&rsquo;s talk about your project</h2>
+            <p>Whether you&rsquo;re ready to start or just exploring ideas, we&rsquo;re happy to talk it through.</p>
+            <ul class="info-list">
+              <li><span class="k">Phone</span><a href="tel:+15550100142">(555) 010-0142</a></li>
+              <li><span class="k">Email</span><a href="mailto:hello@example.com">hello@example.com</a></li>
+              <li><span class="k">Service area</span>Fictional, for demonstration only</li>
+            </ul>
+          </div>
+          <div class="info-card">
+            <h3>Helpful details to include</h3>
+            <ul class="check-list mb-0">
+              <li>Which room or rooms you&rsquo;d like to remodel</li>
+              <li>What you like and dislike about the current space</li>
+              <li>Style ideas or inspiration photos you love</li>
+              <li>Anything that must stay the same</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Hearth &amp; Home Remodeling, home page">
+            <svg class="brand-mark" viewBox="0 0 38 38" aria-hidden="true" focusable="false"><rect width="38" height="38" rx="6" fill="currentColor"/><path d="M7 19 19 8l12 11" fill="none" stroke="#F8F6F0" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 18v13h16V18" fill="none" stroke="#F8F6F0" stroke-width="2.4" stroke-linejoin="round"/><path d="M16 31v-7a3 3 0 0 1 6 0v7" fill="none" stroke="#A9B8A2" stroke-width="2.2" stroke-linejoin="round"/></svg>
+            <span class="brand-text">Hearth &amp; Home<small>Remodeling</small></span>
+          </a>
+          <p>Thoughtfully designed kitchens and bathrooms, planned around how you live.</p>
+        </div>
+        <nav aria-label="Footer quick links">
+          <h2>Quick Links</h2>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Footer services">
+          <h2>Services</h2>
+          <ul class="footer-links">
+            <li><a href="services.html#kitchen">Kitchen Remodeling</a></li>
+            <li><a href="services.html#bathroom">Bathroom Remodeling</a></li>
+            <li><a href="services.html#design">Design &amp; Planning</a></li>
+            <li><a href="services.html#whole-home">Whole-Home Updates</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2>Contact</h2>
+          <address class="footer-contact">
+            <span class="demo-tag">Demo contact information</span>
+            <p>Phone: <a href="tel:+15550100142">(555) 010-0142</a></p>
+            <p>Email: <a href="mailto:hello@example.com">hello@example.com</a></p>
+            <p>Service area: fictional, for demonstration only</p>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span data-year>2026</span> Hearth &amp; Home Remodeling (fictional demonstration business). All rights reserved.</p>
+        <p>This website is a portfolio demonstration created by Vantorax Studio. The business, contact details, and project concepts are fictional. Photography is sourced from Unsplash and shown as illustrative concepts only.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
